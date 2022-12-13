@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // movie details
     function displayMovieDetails(movie) {
       const markUp = `<img src="${movie.poster}" alt="">
-    <div>
+    <div class="hello">
     <h2 id="movieTitle" class= "customtitles">${movie.title}</h2>
     <p id="description">${movie.description}</p>
     <p id="runtime">Length: <span>${movie.runtime} Minutes</span></p>
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <p id="availableTickets">Available tickets: <span>${
       movie.capacity - movie.tickets_sold
     }</span></p>
-    <button class="custombtn" id="buyTicket">buy ticket 🎟️</button>
+    <button class="custombtn" id="buyTicket">buy ticket </button>
    </div>`;
   
       movieDetailsContainer.innerHTML = "";
@@ -65,9 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
       if (remainingTickets > 0) {
         movie.tickets_sold++;
         remainingTickets--;
-        btn.innerHTML = "buy ticket 🎟️";
+        btn.innerHTML = "buy ticket";
       } else {
-        btn.innerHTML = "sold out ⌛";
+        btn.innerHTML = "sold out";
         btn.classList.add("soldOut");
       }
       ticketsSold.innerHTML = `Tickets sold: <span>${movie.tickets_sold}</span>`;
