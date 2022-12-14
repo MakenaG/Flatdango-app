@@ -1,12 +1,16 @@
 *{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 body{
-  background-color:white;
+  background-color:light;
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy4xpmsqhLLNCyBBjKSfAWwzWsqPdUt9b8Iw&usqp=CAU);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 h1{
   height: 5rem;
@@ -39,7 +43,7 @@ h1{
 }
 .big{
   display: flex;
-  background-color: wheat;
+  background-color:ghostwhite;
   padding: 1rem;
   border-radius: .5rem;
   width: 60rem;
