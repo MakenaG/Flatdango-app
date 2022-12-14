@@ -1,10 +1,12 @@
 *{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 body{
-  background-color: rgb(63, 170, 173);
+  background-color:white;
   height: 100vh;
   width: 100vw;
-  overflow-y: auto;
-  
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 h1{
   height: 5rem;
@@ -12,31 +14,66 @@ h1{
   display: block;
   font-size: xx-large;
 }
-#search {
-    width: 100px;
-}
+
 #movieList{
   height:7vh;
 }
 #movieDetails{
-  
-  width: 50vw;
-  height: 30vh;
-
-  
+  width: 30vw;
+ padding: .2rem; 
 }
 #movieDetails img{
-  height: 50vh;
-  width: 30vh;
+  height: 80vh;
+  width: 30vw;
+  border-radius: .2rem;
 }
 .moviesList{
-  /* background-color: red; */
-  width: 90vw;
-  height:100vh;
+
+  width: 20vw;
+  flex-grow: 1;
+  /* background-color: green; */
+  margin-right: 1rem;
+  
+  
+
 }
 .big{
   display: flex;
+  background-color: wheat;
+  padding: 1rem;
+  border-radius: .5rem;
+  width: 60rem;
+  overflow-x: hidden;
+  
+
+
 }
 .list-group-item {
   line-height: 1rem;
+  cursor: pointer;
+}
+.list-group-item:hover{
+  background-color: rgb(255, 255, 255);
+  padding: .3rem;
+  border-radius: .5rem;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.custombtn{
+  width: 10rem;
+  height:3rem;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  padding: .3rem;
+  border-radius: .4rem;
+}
+.custombtn:hover{
+  background-color: black;
+  color: orange;
+  border:1px solid orange;
+  cursor: pointer;
+
 }
