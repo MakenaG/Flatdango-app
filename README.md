@@ -13,6 +13,9 @@ This is a pretty straight foward program that lets you book movie tickets online
 # Getting Started
 If you haven't already, fork and clone this lesson into your local environment.
 
+# Alternative 1
+- Use the github page link provided below to get started
+
 # Quick Review to clone the program into your local environment
 1. Navigate to https://github.com/MakenaG/Flatdango-app
 2. Once you are in my Github repo, choose SSH and copy the provided git URL info.
